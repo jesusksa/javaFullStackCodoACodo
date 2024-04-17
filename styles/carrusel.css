@@ -1,6 +1,20 @@
 body{
     padding: 0;
     margin: 0;
+    background-color: rgba(0, 255, 72, .8);
+}
+
+.subtitulo{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plantas, .arboles, .ramos{
+    margin: 10px;
+    background-color: whitesmoke;
 }
 
 .bannerPrincipal {
@@ -18,11 +32,12 @@ body{
 .carrusel {
     display: flex;
     overflow: scroll;
-    margin: 0px 100px 0px 100px;
+    margin: 0px 0px 0px 0px;
 }
 
 .item {
     position: relative;
+    margin-bottom: 5px;
 }
 
 .item img{
