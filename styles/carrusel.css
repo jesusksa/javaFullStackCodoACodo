@@ -1,31 +1,9 @@
 body{
     padding: 0;
     margin: 0;
-    /*background-color: rgba(0, 255, 72, .8);*/
-    background-color: #1C7C54;
-}
-
-.subtitulo{
-    color: white;
-    padding: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.plantas, .arboles, .flores{
-    margin: 10px;
-    padding-left: 15px;
-    background-color: whitesmoke;
-    background-color: #73E2A7;
-}
-
-.csd{
-    padding: 5%;
-    margin: 5%;
-    background-color: whitesmoke;
-    background-color: #73E2A7;
+    /*background-color: rgba(0, 255, 72, .8);
+    background-color: #1C7C54;*/
+    background-color: #ACECA1;
 }
 
 .bannerPrincipal {
@@ -40,38 +18,21 @@ body{
     align-items: center;
 }
 
-.carrusel {
-    display: flex;
-    overflow: scroll;
-    margin: 0px 0px 0px 0px;
+.productos{
+    padding: 1%;
+    margin: 5% 8% 5% 8%;
 }
 
-.item {
-    position: relative;
-    margin-bottom: 5px;
-    border: white;
-}
-
-.item img{
-    width: 100%;
-    object-fit: cover;
-    width: 200px;
-    height: 150px;
-    margin-right: 30px;
-    border-radius: 5px;
-}
-
-.card{
-    position: absolute;
-    width: 87%;
-    bottom: 0;
-    background-color: rgba(0,0, 0, .5);
-    
+.subtitulo{
     color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 8%;
+    margin-bottom: 8%;
 }
 
-.card h5{
-    margin: 0;
+h2{
+    color: white;
 }
 
 .carousel{
@@ -81,3 +42,11 @@ body{
 .carousel img{
     height: 50vh;
 }
+
+.card{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
