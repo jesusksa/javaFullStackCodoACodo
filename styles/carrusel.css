@@ -1,20 +1,7 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: rgba(0, 255, 72, .8);
-}
-
-.subtitulo{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.plantas, .arboles, .ramos{
-    margin: 10px;
-    background-color: whitesmoke;
+    background-color: #ACECA1;
 }
 
 .bannerPrincipal {
@@ -29,33 +16,36 @@ body{
     align-items: center;
 }
 
-.carrusel {
+.productos{
+    padding: 1%;
+    margin: 5% 8% 5% 8%;
+}
+
+.subtitulo{
+    color: white;
     display: flex;
-    overflow: scroll;
-    margin: 0px 0px 0px 0px;
+    justify-content: center;
+    padding-top: 8%;
+    margin-bottom: 8%;
 }
 
-.item {
-    position: relative;
-    margin-bottom: 5px;
-}
-
-.item img{
-    width: 100%;
-    object-fit: cover;
-    width: 200px;
-    height: 150px;
-    margin-right: 30px;
-}
-
-.card{
-    position: absolute;
-    width: 87%;
-    bottom: 0;
-    background-color: rgba(0,0, 0, .5);
+h2{
     color: white;
 }
 
-.card h5{
-    margin: 0;
+.carousel{
+    width: 50vh;
 }
+
+.carousel img{
+    height: 50vh;
+}
+
+.tittle{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
