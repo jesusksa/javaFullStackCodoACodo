@@ -4,9 +4,15 @@ body{
     background-color: #ACECA1;
 }
 
+.container-fluid{
+    background: #69EBD0;
+}
+
+/*----------------------------------------------------------------------------------------*/
+
 .bannerPrincipal {
     color: white;
-    background: url(/GreenWorld/images/Banner.jpg);
+    background: url(/images/Banner.jpg);
     background-size: cover;
     background-position: center;
     height: 90vh;
@@ -23,9 +29,14 @@ body{
 
 .subtitulo{
     color: white;
+    background: #49D49D;
     display: flex;
     justify-content: center;
-    padding-top: 8%;
+    padding: 2%;
+    margin-bottom: 8%;
+}
+
+.container{
     margin-bottom: 8%;
 }
 
@@ -42,6 +53,7 @@ h2{
 }
 
 .tittle{
+    background: white;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -49,3 +61,27 @@ h2{
 
 /*--------------------------------------------------------------------------------------------------*/
 
+#carouselExample4{
+    width: 100%;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 50%;
+}
+
+.carousel-inner {
+    padding: 1em;
+}
