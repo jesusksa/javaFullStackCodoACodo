@@ -8,6 +8,7 @@ body{
 
 #contenedorNav{
     background: #558564;
+    padding: 1%;
 }
 
 /*----------------------------------SECTION------------------------------------------------------*/
@@ -26,7 +27,7 @@ body{
 
 .bannerPrincipal img{
     background-color: rgba(255, 255, 255, .7);
-    border-radius: 150px;
+    border-radius: 50%;
 }
 
 .productos{
@@ -39,6 +40,7 @@ body{
     background: #49D49D;
     display: flex;
     justify-content: center;
+    text-align: center;
     padding: 2%;
     margin-bottom: 8%;
 }
@@ -135,5 +137,14 @@ h2{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 35px 0px;
+    }
+}
+/*-----------------------------------------------------------------------------------*/
+@media screen and (max-width: 800px){
+    .card{
+        width: 80%;
+    }
+    .card-body{
+        height: 1%;
     }
 }
