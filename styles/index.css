@@ -1,0 +1,57 @@
+/*------------------------------------------SECTION---------------------------------------------------------*/
+
+.bannerPrincipal {
+    color: white;
+    background: url(/images/Banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos{
+    padding: 1%;
+    margin: 5% 8% 5% 8%;
+}
+
+.subtitulo{
+    color: white;
+    background: #49D49D;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 8%;
+}
+
+/*------------------------------------------CARRUSEL--------------------------------------------------------*/
+
+.carousel{
+    width: 100%;
+}
+
+.tittle{
+    background: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+}
+
+.carousel-inner {
+    padding: 1em;
+}
