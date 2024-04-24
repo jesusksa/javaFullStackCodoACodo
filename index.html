@@ -3,23 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-------------------------------------------------------Link de CSS de Bootstrap------------------------------------------------------------------>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-------------------------------------------------------Link de CSS para estilos Globales--------------------------------------------------------->
     <link rel="stylesheet" href="styles/global.css">
+    <!-------------------------------------------------------Link de CSS para el index----------------------------------------------------------------->
     <link rel="stylesheet" href="styles/index.css">
+    <!-------------------------------------------------------Favicon----------------------------------------------------------------------------------->
     <link rel="shortcut icon" href="images/iconos/favicon.png" type="image/x-icon">
     <title>Eden</title>
 </head>
 <body>
+    <!--------------------------------------------------------Cabecera de la Pagina-------------------------------------------------------------------->
     <header class="cabecera">
+        <!----------------------------------------------------Navbar de Boostrap----------------------------------------------------------------------->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid" id="contenedorNav">
                 <a class="nav-link active" aria-current="page" href="index.html">
                     <img src="images/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
                     El Eden
                 </a>
+                <!--------------------------------------------Boton para el responsive----------------------------------------------------------------->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!--------------------------------------------Cabecera de la Pagina-------------------------------------------------------------------->
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -29,7 +37,7 @@
                             <a class="nav-link" href="#">Arboles</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Guerta</a>
+                            <a class="nav-link" href="#">Huerta</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Flores</a>
@@ -40,16 +48,23 @@
         </nav>
     </header>
 
+    <!--------------------------------------------------------Seccion de Contenidos-------------------------------------------------------------------->
+    <!--------------------------------------------------------Seccion del Banner Principal------------------------------------------------------------->
     <section class="bannerPrincipal">
         <h1>El Gran Paraiso del Jardin del Eden</h1>
         <h2>Disfruta de nuestra mejor seleccion para tu hogar o regalar</h2>
     </section>
-
+    <!--------------------------------------------------------Seccion de las Productos (plantas)------------------------------------------------------->
     <section class="productos">
+        <!----------------------------------------------------Subtitulo para los primeros productos---------------------------------------------------->
         <h2 class="subtitulo">Lo más pedido por nuestra comunidad</h2>
+        <!----------------------------------------------------Contenedor de los productos-------------------------------------------------------------->
         <div class="container-fluid text-center" id="contenedor1">
+            <!------------------------------------------------Fila que contiene las columnas con los carruseles---------------------------------------->
             <div class="row align-items-start">
+                <!--------------------------------------------Columna que contiene el 1er carrusel----------------------------------------------------->
                 <div class="col-md-4">
+                    <!----------------------------------------1er Carrusel de Plantas------------------------------------------------------------------>
                     <h2>La naturaleza a tu hogar</h2>
                     <div id="carouselExample1" class="carousel slide">
                         <div class="carousel-inner">
@@ -78,6 +93,7 @@
                                 <div class="tittle"><h5>Cactus</h5></div> 
                             </div>
                         </div>
+                        <!------------------------------------Botones de Siguiente y Anterior del carrusel--------------------------------------------->
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
@@ -88,7 +104,9 @@
                         </button>
                     </div>
                 </div>
+                <!--------------------------------------------Columna que contiene el 2do carrusel----------------------------------------------------->
                 <div class="col-md-4">
+                    <!----------------------------------------2do Carrusel de Arboles------------------------------------------------------------------>
                     <h2>Un mundo más verde</h2>
                     <div id="carouselExample2" class="carousel slide">
                         <div class="carousel-inner">
@@ -117,6 +135,7 @@
                                 <div class="tittle"><h5>Naranjo</h5></div> 
                             </div>
                         </div>
+                        <!------------------------------------Botones de Siguiente y Anterior del carrusel--------------------------------------------->
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
@@ -127,7 +146,9 @@
                         </button>
                     </div>
                 </div>
+                <!--------------------------------------------Columna que contiene el 3er carrusel----------------------------------------------------->
                 <div class="col-md-4">
+                    <!----------------------------------------3er Carrusel de Huerta------------------------------------------------------------------->
                     <h2>El campo en tu casa</h2>
                     <div id="carouselExample3" class="carousel slide" data-bs-touch="true">
                         <div class="carousel-inner">
@@ -156,6 +177,7 @@
                                 <div class="tittle"><h5>Berenjenas</h5></div> 
                             </div>
                         </div>
+                        <!------------------------------------Botones de Siguiente y Anterior del carrusel--------------------------------------------->
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
@@ -169,11 +191,15 @@
             </div>
         </div>
         <br>
+        <!----------------------------------------------------Subtitulo para el segundo producto------------------------------------------------------->
         <h2 class="subtitulo"> Ramos de flores para enamorar</h2>
+        <!----------------------------------------------------Contenedor de los productos-------------------------------------------------------------->
         <div class="conainer text-center" id="contenedor2">
+            <!------------------------------------------------4to Carrusel de Flores------------------------------------------------------------------->
             <div id="carouselExample4" class="carousel slide carousel-fade">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
+                        <!------------------------------------Cartas de cada flor---------------------------------------------------------------------->
                         <div class="cards-wrapper">
                             <div class="card" style="width: 18rem;">
                                 <img src="images/flores/rosas.jpg" class="card-img-top" alt="...">
@@ -199,6 +225,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
+                        <!------------------------------------Cartas de cada flor---------------------------------------------------------------------->
                         <div class="cards-wrapper">
                             <div class="card" style="width: 18rem;">
                                 <img src="images/flores/Jasminum.jpg" class="card-img-top" alt="...">
@@ -224,6 +251,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
+                        <!------------------------------------Cartas de cada flor---------------------------------------------------------------------->
                         <div class="cards-wrapper">
                             <div class="card" style="width: 18rem;">
                                 <img src="images/flores/salvia.jpg" class="card-img-top" alt="...">
@@ -248,6 +276,7 @@
                             </div>
                         </div>
                     </div>
+                    <!----------------------------------------Botones de Siguiente y Anterior del carrusel--------------------------------------------->
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample4" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
@@ -260,9 +289,10 @@
             </div>
         </div>
     </section>
-
+    <!--------------------------------------------------------Pie de pagina---------------------------------------------------------------------------->
     <footer class="footer">
         <div class="boxprincipal">
+            <!------------------------------------------------Box de la imagen------------------------------------------------------------------------->
             <div class="box">
                 <figure>
                     <a href="#">
@@ -270,11 +300,13 @@
                     </a>
                 </figure>
             </div>
+            <!------------------------------------------------Box de Informacion Sobre Nosotros-------------------------------------------------------->
             <div class="box">
                 <h2>SOBRE NOSOTROS</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, recusandae.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, recusandae.</p>
             </div>
+            <!------------------------------------------------Box de Links a redes sociales------------------------------------------------------------>
             <div class="box">
                 <h2>SIGUENOS</h2>
                 <div class="red-social">
@@ -285,7 +317,7 @@
             </div>
         </div>
     </footer>
-
+    <!--------------------------------------------------------Link de JavaScript de Bootstrap----------------------------------------------------------->
     <script src="js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/38961e7548.js" crossorigin="anonymous"></script>
 </body>
