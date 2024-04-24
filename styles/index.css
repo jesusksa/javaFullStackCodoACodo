@@ -2,7 +2,7 @@
 
 .bannerPrincipal {
     color: white;
-    background: url(/images/Banner.jpg);
+    background: url(../images/Banner.jpg);
     background-size: cover;
     background-position: center;
     height: 90vh;
