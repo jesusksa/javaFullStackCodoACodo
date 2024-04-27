@@ -1,0 +1,52 @@
+.col-md-6{
+    border: solid 3px white;
+}
+
+#fondoForm{
+    background: url(../images/forms2.jpg);
+    background-size: cover;
+}
+
+#logoForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-container {
+    margin: 0 auto;
+    border: solid 2px red;
+}
+
+.form-title {
+    margin-bottom: 20px;
+}
+
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .form-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .form-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
