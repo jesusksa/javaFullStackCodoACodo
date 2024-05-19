@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-------------------------------------------------------Link de CSS de Bootstrap------------------------------------------------------------------>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="cssBootstrap/bootstrap.min.css">
     <!-------------------------------------------------------Link de CSS para estilos Globales--------------------------------------------------------->
     <link rel="stylesheet" href="css/global.css">
     <!-------------------------------------------------------Link de CSS para el Formulario------------------------------------------------>
@@ -82,14 +82,96 @@
                     <div class="col-md-6">
                         <div class="form-container">
                             <h1 class="form-title text-center">Hacenos tu pedido</h1>
-                            <form action="#">
-                                <div class="form-group">
+                            <form action="#" name="formPedidos">
+                                <div class="form-group" id="form-producto">
                                     <label for="producto" class="form-label">Producto:</label>
                                     <select id="producto" name="producto" class="form-select">
                                         <option value="">Seleccione un producto</option>
-                                        <option value="producto1">Producto 1</option>
-                                        <option value="producto2">Producto 2</option>
-                                        <option value="producto3">Producto 3</option>
+                                        <option value="plantas">Plantas</option>
+                                        <option value="arboles">Arboles</option>
+                                        <option value="flores">Flores</option>
+                                        <option value="plantacion">Plantacion</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group" id="form-plantas">
+                                    <label for="Plantas" class="form-label">Plantas:</label>
+                                    <select name="plantas" id="plantas"  class="form-select">
+                                        <option value="">Seleccione un tipo de Planta</option>
+                                        <option value="agave">Agave</option>
+                                        <option value="aloevera">Aloe vera</option>
+                                        <option value="arboldeJade">Árbol de Jade</option>
+                                        <option value="atrapamoscas">Atrapamoscas</option>
+                                        <option value="bonsai">Bonsai</option>
+                                        <option value="cactus">Cactus</option>
+                                        <option value="arania">Araña</option>
+                                        <option value="costillaDeAdan">Costilla de Adan</option>
+                                        <option value="cunaDeMoises">Cuna de Moises</option>
+                                        <option value="dracena">Dracena</option>
+                                        <option value="girasoles">Girasoles</option>
+                                        <option value="lavanda">Lavanda</option>
+                                        <option value="lenguaDeSuegra">Lengua de Suegra</option>
+                                        <option value="filondendron">Filodendron</option>
+                                        <option value="potus">Potus</option>
+                                        <option value="romero">Romero</option>
+                                        <option value="yucca">Yucca</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group" id="form-arboles">
+                                    <label for="" class="from-label">Árboles:</label>
+                                    <select name="arboles" id="arboles" class="form-select">
+                                        <option value="">Seleccione un tipo de Árbol</option>
+                                        <option value="almendro">Almendro</option>
+                                        <option value="cocotero">Cocotero</option>
+                                        <option value="dracaena">Dracaena</option>
+                                        <option value="duraznero">Duraznero</option>
+                                        <option value="eucalyptus">Eucalyptus</option>
+                                        <option value="laurel">Laurel</option>
+                                        <option value="limonero">Limonero</option>
+                                        <option value="magnolia">Magnolia</option>
+                                        <option value="manzano">Manzano</option>
+                                        <option value="naranjo">Naranjo</option>
+                                        <option value="nuez">Nuez</option>
+                                        <option value="palmera">Palmera</option>
+                                        <option value="sauce">Sauce</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group" id="form-flores">
+                                    <label for="flores" class="form-label">Flores:</label>
+                                    <select name="flores" id="flores" class="form-select">
+                                        <option value="">Seleccione un tipo de Flor</option>
+                                        <option value="dahlia">Dahlia</option>
+                                        <option value="hibiscus">Hibiscus</option>
+                                        <option value="hortensias">Hortencias</option>
+                                        <option value="jazmin">Jazmin</option>
+                                        <option value="lilium">Lilium</option>
+                                        <option value="orquidea">Orquidea</option>
+                                        <option value="rosas">Rosas</option>
+                                        <option value="salvia">Salvia</option>
+                                        <option value="tulipanes">Tulipanes</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group" id="form-cultivo">
+                                    <label for="cultivos" class="form-label">Cultivos:</label>
+                                    <select name="cultivos" id="cultivos" class="form-select">
+                                        <option value="">Seleccione un Producto</option>
+                                        <option value="ajo">Ajo</option>
+                                        <option value="albhaca">Albhaca</option>
+                                        <option value="berenjena">Berenjena</option>
+                                        <option value="cebolla">Cebolla</option>
+                                        <option value="fresa">Fresa</option>
+                                        <option value="hijono">Hijono</option>
+                                        <option value="maiz">Maiz</option>
+                                        <option value="olivo">Olivo</option>
+                                        <option value="papa">Papa</option>
+                                        <option value="pepino">Pepino</option>
+                                        <option value="Pimiento">Pimiento</option>
+                                        <option value="Pinia">Pinia</option>
+                                        <option value="tomate">Tomate</option>
+                                        <option value="tomateCherry">Tomates Cherry</option>
                                     </select>
                                 </div>
 
@@ -113,7 +195,7 @@
                                     <input type="text" id="contacto" name="contacto" class="form-input">
                                 </div>
 
-                                <button type="submit" class="form-button">Enviar pedido</button>
+                                <button type="submit" class="form-button" onclick="validarCampos()">Enviar pedido</button>
                             </form>
                         </div>
                     </div>
@@ -152,6 +234,8 @@
 
         <!--------------------------------------------------------Link de JavaScript de Bootstrap---------------------------------------------------------->
         <script src="javascriptBootstrap/bootstrap.min.js"></script>
+        <script src="/js/validacionesFormulario.js"></script>
+        <script src="/js/ocultarMostrarElementos.js"></script>
         <script src="https://kit.fontawesome.com/38961e7548.js" crossorigin="anonymous"></script>
 </body>
 
