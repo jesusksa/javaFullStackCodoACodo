@@ -54,16 +54,16 @@ document.addEventListener("DOMContentLoaded", function() {
         
         switch (formProducto.value) {
             case "plantas":
-                formPlantas.style.display = "block";
+                formPlantas.style.display = "flex";
                 break;
             case "arboles":
-                formArboles.style.display = "block";
+                formArboles.style.display = "flex";
                 break;
             case "flores":
-                formFlores.style.display = "block";
+                formFlores.style.display = "flex";
                 break;
             case "plantacion":
-                formCultivo.style.display = "block";
+                formCultivo.style.display = "flex";
                 break;
         }
     });

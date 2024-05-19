@@ -76,15 +76,15 @@
         <section class="pedidos">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6" id="fondoForm">
+                    <div class="col-md-6" id="fondoImg">
                         <img src="images/logo.png" alt="" class=" img-fluid" width="300" height="300" id="logoForm">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" id="fondoForm">
                         <div class="form-container">
                             <h1 class="form-title text-center">Hacenos tu pedido</h1>
                             <form action="#" name="formPedidos">
                                 <div class="form-group" id="form-producto">
-                                    <label for="producto" class="form-label">Producto:</label>
+                                    <label for="producto" class="form-label"><b>Producto:</b></label>
                                     <select id="producto" name="producto" class="form-select">
                                         <option value="">Seleccione un producto</option>
                                         <option value="plantas">Plantas</option>
@@ -95,7 +95,7 @@
                                 </div>
 
                                 <div class="form-group" id="form-plantas">
-                                    <label for="Plantas" class="form-label">Plantas:</label>
+                                    <label for="Plantas" class="form-label"><b>Plantas:</b></label>
                                     <select name="plantas" id="plantas"  class="form-select">
                                         <option value="">Seleccione un tipo de Planta</option>
                                         <option value="agave">Agave</option>
@@ -119,7 +119,7 @@
                                 </div>
 
                                 <div class="form-group" id="form-arboles">
-                                    <label for="" class="from-label">Árboles:</label>
+                                    <label for="" class="from-label"><b>Árboles:</b></label>
                                     <select name="arboles" id="arboles" class="form-select">
                                         <option value="">Seleccione un tipo de Árbol</option>
                                         <option value="almendro">Almendro</option>
@@ -139,7 +139,7 @@
                                 </div>
 
                                 <div class="form-group" id="form-flores">
-                                    <label for="flores" class="form-label">Flores:</label>
+                                    <label for="flores" class="form-label"><b>Flores:</b></label>
                                     <select name="flores" id="flores" class="form-select">
                                         <option value="">Seleccione un tipo de Flor</option>
                                         <option value="dahlia">Dahlia</option>
@@ -155,7 +155,7 @@
                                 </div>
 
                                 <div class="form-group" id="form-cultivo">
-                                    <label for="cultivos" class="form-label">Cultivos:</label>
+                                    <label for="cultivos" class="form-label"><b>Cultivos:</b></label>
                                     <select name="cultivos" id="cultivos" class="form-select">
                                         <option value="">Seleccione un Producto</option>
                                         <option value="ajo">Ajo</option>
@@ -176,7 +176,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="pago" class="form-label">Forma de pago:</label>
+                                    <label for="pago" class="form-label"><b>Forma de pago:</b></label>
                                     <select id="pago" name="pago" class="form-select">
                                         <option value="">Seleccione una forma de pago</option>
                                         <option value="tarjeta">Tarjeta de crédito</option>
@@ -186,16 +186,18 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="direccion" class="form-label">Dirección de envío:</label>
+                                    <label for="direccion" class="form-label"><b>Dirección de envío:</b></label>
                                     <input type="text" id="direccion" name="direccion" class="form-input">
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="contacto" class="form-label">Información de contacto:</label>
+                                    <label for="contacto" class="form-label"><b>Información de contacto:</b></label>
                                     <input type="text" id="contacto" name="contacto" class="form-input">
                                 </div>
 
-                                <button type="submit" class="form-button" onclick="validarCampos()">Enviar pedido</button>
+                                <div class="form-group">
+                                    <button type="submit" class="form-button d-flex justify-content-center" onclick="validarCampos()">Enviar pedido</button>
+                                </div>
                             </form>
                         </div>
                     </div>
