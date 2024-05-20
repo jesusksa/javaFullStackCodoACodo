@@ -50,19 +50,23 @@
             </div>
         </nav>
     </header>
-    <section>
-
-        <!--------------------------------------------------------Seccion de Formulario de Pedidos--------------------------------------------------------->
+    <!--------------------------------------------------------Seccion Principal / Contenido------------------------------------------------------------>
+    <main>
+        <!----------------------------------------------------Seccion de Formulario de Pedidos--------------------------------------------------------->
         <section class="pedidos">
             <div class="container">
+                <!--------------------------------------------Fila que contiene el Formulario---------------------------------------------------------->
                 <div class="row">
+                    <!----------------------------------------Columna que contiene El Logo del bibero-------------------------------------------------->
                     <div class="col-md-6" id="fondoImg">
                         <img src="images/logo.png" alt="" class=" img-fluid" width="300" height="300" id="logoForm">
                     </div>
+                    <!----------------------------------------Columna que contiene El Formulario------------------------------------------------------>
                     <div class="col-md-6" id="fondoForm">
                         <div class="form-container">
                             <h1 class="form-title text-center">Hacenos tu pedido</h1>
                             <form action="#" name="formPedidos">
+                                <!----------------------------Contenedor del campo tipo de Producto--------------------------------------------------->
                                 <div class="form-group" id="form-producto">
                                     <label for="producto" class="form-label"><b>Producto:</b></label>
                                     <select id="producto" name="producto" class="form-select">
@@ -73,7 +77,7 @@
                                         <option value="plantacion">Plantacion</option>
                                     </select>
                                 </div>
-
+                                <!----------------------------Contenedor del campo tipo de Planta----------------------------------------------------->
                                 <div class="form-group" id="form-plantas">
                                     <label for="Plantas" class="form-label"><b>Plantas:</b></label>
                                     <select name="plantas" id="plantas"  class="form-select">
@@ -97,7 +101,7 @@
                                         <option value="yucca">Yucca</option>
                                     </select>
                                 </div>
-
+                                <!----------------------------Contenedor del campo tipo de Árbol------------------------------------------------------>
                                 <div class="form-group" id="form-arboles">
                                     <label for="" class="from-label"><b>Árboles:</b></label>
                                     <select name="arboles" id="arboles" class="form-select">
@@ -117,7 +121,7 @@
                                         <option value="sauce">Sauce</option>
                                     </select>
                                 </div>
-
+                                <!----------------------------Contenedor del campo tipo de Flor------------------------------------------------------->
                                 <div class="form-group" id="form-flores">
                                     <label for="flores" class="form-label"><b>Flores:</b></label>
                                     <select name="flores" id="flores" class="form-select">
@@ -133,7 +137,7 @@
                                         <option value="tulipanes">Tulipanes</option>
                                     </select>
                                 </div>
-
+                                <!----------------------------Contenedor del campo tipo de Cultivo---------------------------------------------------->
                                 <div class="form-group" id="form-cultivo">
                                     <label for="cultivos" class="form-label"><b>Cultivos:</b></label>
                                     <select name="cultivos" id="cultivos" class="form-select">
@@ -154,7 +158,7 @@
                                         <option value="tomateCherry">Tomates Cherry</option>
                                     </select>
                                 </div>
-
+                                <!----------------------------Contenedor del campo Metodo de Pago----------------------------------------------------->
                                 <div class="form-group">
                                     <label for="pago" class="form-label"><b>Forma de pago:</b></label>
                                     <select id="pago" name="pago" class="form-select">
@@ -164,17 +168,17 @@
                                         <option value="transferencia">Transferencia bancaria</option>
                                     </select>
                                 </div>
-
+                                <!----------------------------Contenedor del campo Direccion---------------------------------------------------------->
                                 <div class="form-group">
                                     <label for="direccion" class="form-label"><b>Dirección de envío:</b></label>
                                     <input type="text" id="direccion" name="direccion" class="form-input">
                                 </div>
-
+                                <!----------------------------Contenedor del campo Contacto----------------------------------------------------------->
                                 <div class="form-group">
                                     <label for="contacto" class="form-label"><b>Información de contacto:</b></label>
                                     <input type="text" id="contacto" name="contacto" class="form-input">
                                 </div>
-
+                                <!----------------------------Contenedor del Boton para realizar el Pedido-------------------------------------------->
                                 <div class="form-group">
                                     <button type="submit" class="form-button d-flex justify-content-center" onclick="validarCampos()">Enviar pedido</button>
                                 </div>
@@ -184,41 +188,41 @@
                 </div>
             </div>
         </section>
-
-        <!--------------------------------------------------------Pie de pagina---------------------------------------------------------------------------->
-        <footer class="footer">
-            <div class="boxprincipal">
-                <!------------------------------------------------Box de la imagen------------------------------------------------------------------------->
-                <div class="box">
-                    <figure>
-                        <a href="#">
-                            <img src="images/logo.png" alt="Logo">
-                        </a>
-                    </figure>
-                </div>
-                <!------------------------------------------------Box de Informacion Sobre Nosotros-------------------------------------------------------->
-                <div class="box">
-                    <h2>SOBRE NOSOTROS</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, recusandae.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, recusandae.</p>
-                </div>
-                <!------------------------------------------------Box de Links a redes sociales------------------------------------------------------------>
-                <div class="box">
-                    <h2>SIGUENOS</h2>
-                    <div class="red-social">
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-instagram"></a>
-                        <a href="#" class="fa fa-twitter"></a>
-                    </div>
+    </main>
+    <!--------------------------------------------------------Pie de pagina---------------------------------------------------------------------------->
+    <footer class="footer">
+        <div class="boxprincipal">
+            <!------------------------------------------------Box de la imagen------------------------------------------------------------------------->
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="images/logo.png" alt="Logo">
+                    </a>
+                </figure>
+            </div>
+            <!------------------------------------------------Box de Informacion Sobre Nosotros-------------------------------------------------------->
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, recusandae.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, recusandae.</p>
+            </div>
+            <!------------------------------------------------Box de Links a redes sociales------------------------------------------------------------>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
+    <!--------------------------------------------------------Link de JavaScript de Bootstrap---------------------------------------------------------->
+    <script src="javascriptBootstrap/bootstrap.min.js"></script>
+    <script src="./js/validacionesFormulario.js"></script>
+    <script src="./js/ocultarMostrarElementos.js"></script>
+    <script src="https://kit.fontawesome.com/38961e7548.js" crossorigin="anonymous"></script>
 
-        <!--------------------------------------------------------Link de JavaScript de Bootstrap---------------------------------------------------------->
-        <script src="javascriptBootstrap/bootstrap.min.js"></script>
-        <script src="./js/validacionesFormulario.js"></script>
-        <script src="./js/ocultarMostrarElementos.js"></script>
-        <script src="https://kit.fontawesome.com/38961e7548.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

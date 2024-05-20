@@ -1,7 +1,9 @@
+// Codigo que valida si no ah seleccionado ninguna opcion y que los campos de imput no esten vacios
 function validarCampos(){
-    
+    //obtiene el el valor seleccionado del Tipo de producto que quiere
     const producto = document.getElementById("producto").value;
 
+    //valida que en el primer campo no este seleccionado la primera(Option 0) opcion
     if(document.getElementById("producto").selectedIndex == 0){
         alert("No ha seleccionado ningun tipo de Producto")
         return 0;
