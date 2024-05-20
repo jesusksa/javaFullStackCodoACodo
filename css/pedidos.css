@@ -58,8 +58,26 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 550) {
+@media screen and (max-width: 1100px) {
   .form-input, .form-select{
-    background-color: aqua;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .form-input, .form-select{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .form-input, .form-select{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .form-input, .form-select{
+    width: 100%;
   }
 }
