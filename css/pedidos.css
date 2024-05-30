@@ -53,9 +53,15 @@
   width: 50%;
   color: white;
   margin-top: 5%;
+  margin-bottom: 5%;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
+}
+
+.form-button:hover{
+  background-color: #006de1;
+  width: 55%;
 }
 
 @media screen and (max-width: 1100px) {
