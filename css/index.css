@@ -55,3 +55,26 @@
 .carousel-inner {
     padding: 1em;
 }
+/*-------------------------------------------Boton Formulario------------------------------------------------*/
+/* Estilos para el botón */
+.custom-button {
+    display: inline-block;
+    padding: 30px 40px;
+    background: linear-gradient(to right, #a3e6e1, #20bf55);
+    border-radius: 50px 0px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.custom-button:hover {
+    background: linear-gradient(to right, #20bf55, #a3e6e1);
+}
+
+/* Estilos para el icono de la planta */
+.custom-button::before {
+    content: "\1F331"; /* Código Unicode para el icono de la planta */
+    margin-right: 10px;
+}
