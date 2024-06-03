@@ -24,18 +24,28 @@ let body = ''
 for (let i = 1; i < arrayPlantas.length-2; i++) { 
     imagen=(arrayPlantas[i].default_image)
     body += `<div class="plant-section">
-                    <div id="imagen">
-                            <a href="${imagen.medium_url}" target="_blank">
-                                <img src="${imagen.thumbnail}" alt=""/>
-                            </a>
+                <div class="row align-items-center">
+                    <div class="col-md-3 ">
+                        <div id="imagen">
+                                <a href="${imagen.medium_url}" target="_blank">
+                                    <img src="${imagen.thumbnail}" alt=""/>
+                                </a>
+                        </div>
                     </div>
-                    <p><b>Nombre común: </b><br> ${arrayPlantas[i].common_name}</p>
-                    <div id="descripcion">
-                        <p><b>Nombre Científico:  </b><br>  ${arrayPlantas[i].scientific_name}</p>
+                    <div class="col-md-3">
+                        <h5><b>Nombre común: </b><br> ${arrayPlantas[i].common_name}</h5>
                     </div>
-                    <div id="datos_basicos">
-                        <p> <b>Expocisión solar:  </b> <br> ${arrayPlantas[i].sunlight}</p>
+                    <div class="col-md-3">
+                        <div id="descripcion">
+                            <h5><b>Nombre Científico:  </b><br>  ${arrayPlantas[i].scientific_name}</h5>
+                        </div>
                     </div>
+                    <div class="col-md-3">
+                        <div id="datos_basicos">
+                            <h5><b>Expocisión solar:  </b> <br> ${arrayPlantas[i].sunlight}</h5>
+                        </div>
+                    </div>                    
+                </div>
             </div>`
    
 }
