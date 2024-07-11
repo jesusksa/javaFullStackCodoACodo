@@ -24,8 +24,8 @@ public class PedidoDAO {
                         resultados.getString("direccion"),
                         resultados.getString("contacto")
                 );
+                pedidos.add(pedido);
             }
-
             return pedidos;
         }catch (Exception e){
             e.printStackTrace();

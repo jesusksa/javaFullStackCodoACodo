@@ -9,7 +9,7 @@ public class ConexionDB {
     private static Statement statement;
     static {
         try{
-            conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/peliculas","root","root123");
+            conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/vivero","root","root123");
             if (conexion != null) {
                 System.out.println("Conexión: Conexión a la Base de Datos satisfactoria");
             }

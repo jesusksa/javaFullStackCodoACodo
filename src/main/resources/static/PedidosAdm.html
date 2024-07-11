@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-------------------------------------------------------Link de CSS de Bootstrap------------------------------------------------------------------>
+    <link rel="stylesheet" href="cssBootstrap/bootstrap.min.css">
+    <!-------------------------------------------------------Link de CSS para estilos Globales--------------------------------------------------------->
+    <link rel="stylesheet" href="css/global.css">
+    <!-------------------------------------------------------Favicon----------------------------------------------------------------------------------->
+    <link rel="shortcut icon" href="images/iconos/favicon.png" type="image/x-icon">
+    <title>Administración de Pedidos</title>
+</head>
+<body>
+    <!--------------------------------------------------------Cabecera de la Pagina-------------------------------------------------------------------->
+    <header class="cabecera">
+        <!----------------------------------------------------Navbar de Boostrap----------------------------------------------------------------------->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid" id="contenedorNav">
+                <a class="nav-link active" aria-current="page" href="index.html">
+                    <img src="images/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    El Eden
+                </a>
+                <!--------------------------------------------Boton para el responsive----------------------------------------------------------------->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--------------------------------------------Cabecera de la Pagina-------------------------------------------------------------------->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="plantas.html">Plantas</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">Arboles</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cultivo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Flores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="arboles.html">Api Árboles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="PedidosAdm.html">Administrar Pedidos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="conteiner-fluid">
+        <h1 class="text-center">Listado de Pedidos</h1>
+        <div class="container">
+            <div>
+                <button class="btn btn-info mb-3" onclick="getPedidos()">Obtener Pedidos</button>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col" class="text-center">Producto</th>
+                        <th scope="col" class="text-center">Especie</th>
+                        <th scope="col" class="text-center">Forma de Pago</th>
+                        <th scope="col" class="text-center">Dirección</th>
+                        <th scope="col" class="text-center">Contacto</th>
+                    </tr>
+                </thead>
+                <tbody id="pedidos">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!--------------------------------------------------------Pie de pagina---------------------------------------------------------------------------->
+    <footer class="footer">
+        <div class="boxprincipal">
+            <!------------------------------------------------Box de la imagen------------------------------------------------------------------------->
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="images/logo.png" alt="Logo">
+                    </a>
+                </figure>
+            </div>
+            <!------------------------------------------------Box de Informacion Sobre Nosotros-------------------------------------------------------->
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, recusandae.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, recusandae.</p>
+            </div>
+            <!------------------------------------------------Box de Links a redes sociales------------------------------------------------------------>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--------------------------------------------------------Link de JavaScript de Bootstrap----------------------------------------------------------->
+    <script src="javascriptBootstrap/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/38961e7548.js" crossorigin="anonymous"></script>
+    <script src="./js/pedidos.js"></script>
+</body>
+</html>
