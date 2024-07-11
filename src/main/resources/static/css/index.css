@@ -1,0 +1,86 @@
+/*------------------------------------------SECTION---------------------------------------------------------*/
+
+.bannerPrincipal {
+    color: white;
+    background: url(../images/Banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-banner{
+    background: rgba(4, 185, 125, 0.6);
+    border-radius: 30px;
+}
+
+.productos{
+    padding: 1%;
+    margin: 5% 8% 5% 8%;
+}
+
+.subtitulo{
+    color: white;
+    background: #49D49D;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 8%;
+}
+
+/*------------------------------------------CARRUSEL--------------------------------------------------------*/
+
+.carousel{
+    width: 100%;
+}
+
+.tittle{
+    background: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+}
+
+.carousel-inner {
+    padding: 1em;
+}
+/*-------------------------------------------Boton Formulario------------------------------------------------*/
+/* Estilos para el botón */
+.custom-button {
+    display: inline-block;
+    padding: 30px 40px;
+    background: linear-gradient(to right, #a3e6e1, #20bf55);
+    border-radius: 50px 0px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.custom-button:hover {
+    background: linear-gradient(to right, #20bf55, #a3e6e1);
+}
+
+/* Estilos para el icono de la planta */
+.custom-button::before {
+    content: "\1F331"; /* Código Unicode para el icono de la planta */
+    margin-right: 10px;
+}

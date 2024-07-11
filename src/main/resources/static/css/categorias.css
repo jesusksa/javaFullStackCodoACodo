@@ -1,0 +1,78 @@
+/*----------------------------------------------ESTILOS DE CATEGORIAS--------------------------------------------------------*/
+
+/* Sección de plantas */
+.plant-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Sección de la izquierda Imagen */
+.plant-image {
+    flex: 1;
+    width: 100%;
+}
+
+/* Sección de en medio Información */
+.plant-info {
+    flex: 1;        
+    padding: 0 20px;
+}
+
+/* Sección de en medio Nombre */
+.plant-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: black;
+}
+ 
+/* Sección de en medio Descripción */
+.plant-description {
+    font-size: 1rem;
+    color: #777;
+}
+        
+/* Sección de en medio Atributos */
+.plant-attributes{
+    display: flex;
+}
+        
+/* Sección de en medio Iconos */
+.icon-info{
+    padding-right: 5%;
+}
+
+/* Sección de en medio Barras de Progreso */
+.progress{
+    width: 80%;
+}
+
+/* Sección de la derecha Botones */
+.plant-button {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Cuando la pantalla es menor a 500px*/
+@media screen and (max-width: 500px){
+
+    /* Sección de en medio Atributos */
+    .plant-attributes{
+        display: grid;
+    }
+
+    /* Sección de en medio Columna*/
+    .col-md-6{
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }    
+}
