@@ -1,62 +1,62 @@
 package org.example.Model;
 
 public class Pedido {
-    private Integer id;
-    private String tipoProducto;
-    private String especieProducto;
-    private String formaPago;
+    private Integer idpedidos;
+    private String producto;
+    private String especie;
+    private String formapago;
     private String direccion;
     private String contacto;
 
     public Pedido() {
     }
-    public Pedido(Integer id, String tipoProducto, String especieProducto, String formaPago, String direccion, String contacto) {
-        this.id = id;
-        this.tipoProducto = tipoProducto;
-        this.especieProducto = especieProducto;
-        this.formaPago = formaPago;
+    public Pedido(Integer idpedidos, String producto, String especie, String formapago, String direccion, String contacto) {
+        this.idpedidos = idpedidos;
+        this.producto = producto;
+        this.especie = especie;
+        this.formapago = formapago;
         this.direccion = direccion;
         this.contacto = contacto;
     }
 
-    public Pedido(String tipoProducto, String especieProducto, String formaPago, String direccion, String contacto) {
-        this.tipoProducto = tipoProducto;
-        this.especieProducto = especieProducto;
-        this.formaPago = formaPago;
+    public Pedido(String producto, String especie, String formapago, String direccion, String contacto) {
+        this.producto = producto;
+        this.especie = especie;
+        this.formapago = formapago;
         this.direccion = direccion;
         this.contacto = contacto;
     }
 
-    public Integer getId() {
-        return id;
+    public Integer getIdpedidos() {
+        return idpedidos;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setIdpedidos(Integer idpedidos) {
+        this.idpedidos = idpedidos;
     }
 
-    public String getTipoProducto() {
-        return tipoProducto;
+    public String getProducto() {
+        return producto;
     }
 
-    public void setTipoProducto(String tipoProducto) {
-        this.tipoProducto = tipoProducto;
+    public void setProducto(String producto) {
+        this.producto = producto;
     }
 
-    public String getEspecieProducto() {
-        return especieProducto;
+    public String getEspecie() {
+        return especie;
     }
 
-    public void setEspecieProducto(String especieProducto) {
-        this.especieProducto = especieProducto;
+    public void setEspecie(String especie) {
+        this.especie = especie;
     }
 
-    public String getFormaPago() {
-        return formaPago;
+    public String getFormapago() {
+        return formapago;
     }
 
-    public void setFormaPago(String formaPago) {
-        this.formaPago = formaPago;
+    public void setFormapago(String formapago) {
+        this.formapago = formapago;
     }
 
     public String getDireccion() {

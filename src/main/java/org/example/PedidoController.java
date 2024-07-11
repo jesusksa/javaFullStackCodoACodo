@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+@RestController
 public class PedidoController {
     @CrossOrigin(origins = "*")
     @GetMapping("/listarPedidos")
@@ -34,7 +35,7 @@ public class PedidoController {
     @DeleteMapping("/delPedido/{id}")
     public void delPedido(@PathVariable("id") Integer id) {
         Pedido pedido = new Pedido();
-        pedido.setId(id);
+        pedido.setIdpedidos(id);
 
         PedidoDAO pedidoDAO = new PedidoDAO();
         pedidoDAO.Pop(pedido);

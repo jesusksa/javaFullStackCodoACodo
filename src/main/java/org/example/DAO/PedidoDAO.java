@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+
 public class PedidoDAO {
 
     public List<Pedido> View(){
@@ -14,7 +15,7 @@ public class PedidoDAO {
             Statement statement = ConexionDB.getStatement();
             ResultSet resultados = statement.executeQuery("Select * from pedidos");
 
-            List<Pedido> pedidos = new ArrayList();
+            List<Pedido> pedidos = new ArrayList<>();
 
             while (resultados.next()){
                 Pedido pedido = new Pedido(resultados.getInt("idpedidos"),
@@ -36,9 +37,9 @@ public class PedidoDAO {
     public Boolean Push(Pedido pedido){
         try {
             Statement statement = ConexionDB.getStatement();
-            Integer cantIngresar = statement.executeUpdate("Insert Into pedidos (producto, especie, formapago, direccion, contacto) Values ('"+pedido.getTipoProducto()+
-                    "', "+pedido.getEspecieProducto()+
-                    "', "+pedido.getFormaPago()+
+            Integer cantIngresar = statement.executeUpdate("Insert Into pedidos (producto, especie, formapago, direccion, contacto) Values ('"+pedido.getProducto()+
+                    "', "+pedido.getEspecie()+
+                    "', "+pedido.getFormapago()+
                     "', "+pedido.getDireccion()+
                     "', "+pedido.getContacto()+"')"
             );
@@ -53,7 +54,7 @@ public class PedidoDAO {
     public Boolean Pop(Pedido pedido){
         try {
             Statement statement = ConexionDB.getStatement();
-            Integer cantidadBorrar = statement.executeUpdate("Delete From pedidos Where idpedido="+pedido.getId());
+            Integer cantidadBorrar = statement.executeUpdate("Delete From pedidos Where idpedido="+pedido.getIdpedidos());
             Boolean borradoOk = (cantidadBorrar == 1);
             return borradoOk;
         }catch (Exception e){
