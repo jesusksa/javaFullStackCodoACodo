@@ -51,5 +51,4 @@ function validarCampos(){
         return 0;
     }
     
-    alert("Su pedido fue recibido con exito");
 }
