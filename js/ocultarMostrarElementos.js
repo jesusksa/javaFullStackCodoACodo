@@ -53,16 +53,16 @@ document.addEventListener("DOMContentLoaded", function() {
         formCultivo.style.display = "none";
         
         switch (formProducto.value) {
-            case "plantas":
+            case "Planta":
                 formPlantas.style.display = "flex";
                 break;
-            case "arboles":
+            case "Árbol":
                 formArboles.style.display = "flex";
                 break;
-            case "flores":
+            case "Flor":
                 formFlores.style.display = "flex";
                 break;
-            case "plantacion":
+            case "Cultivo":
                 formCultivo.style.display = "flex";
                 break;
         }
