@@ -9,25 +9,25 @@ function validarCampos(){
         return 0;
     }else{
         switch(producto){
-            case "plantas": 
+            case "Planta": 
                 if(document.getElementById("plantas").selectedIndex == 0){
                     alert("Debe seleccionar una Planta");
                     return 0;
                 }
             break;
-            case "arboles":
+            case "Árbol":
                 if(document.getElementById("arboles").selectedIndex == 0){
                     alert("Debe seleccionar un Arbol");
                     return 0;
                 }
             break;
-            case "flores":
+            case "Flor":
                 if(document.getElementById("flores").selectedIndex == 0){
                     alert("Debe seleccionar una Flor");
                     return 0;
                 }
             break;
-            case "plantacion":
+            case "Cultivo":
                 if(document.getElementById("cultivos").selectedIndex == 0){
                     alert("Debe seleccionar un producto");
                     return 0;
