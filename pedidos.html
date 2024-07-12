@@ -48,6 +48,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="arboles.html">Api Árboles</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="PedidosAdm.html">Administrar Pedidos</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -74,10 +77,10 @@
                                     <label for="producto" class="form-label"><b>Producto:</b></label>
                                     <select id="producto" name="producto" class="form-select">
                                         <option value="">Seleccione un producto</option>
-                                        <option value="Planta">Planta</option>
-                                        <option value="Árbol">Arbol</option>
-                                        <option value="Flor">Flor</option>
-                                        <option value="Cultivo">Cultivo</option>
+                                        <option value="Planta">Plantas</option>
+                                        <option value="Árbol">Arboles</option>
+                                        <option value="Flor">Flores</option>
+                                        <option value="Cultivo">Cultivos</option>
                                     </select>
                                 </div>
                                 <!----------------------------Contenedor del campo tipo de Planta----------------------------------------------------->
@@ -91,7 +94,7 @@
                                         <option value="Atrapamoscas">Atrapamoscas</option>
                                         <option value="Bonsai">Bonsai</option>
                                         <option value="Cactus">Cactus</option>
-                                        <option value="Arania">Araña</option>
+                                        <option value="Araña">Araña</option>
                                         <option value="Costilla de Adan">Costilla de Adan</option>
                                         <option value="Cuna de Moises">Cuna de Moises</option>
                                         <option value="Dracena">Dracena</option>
@@ -183,7 +186,7 @@
                                 </div>
                                 <!----------------------------Contenedor del Boton para realizar el Pedido-------------------------------------------->
                                 <div class="form-group">
-                                    <button type="submit" class="form-button d-flex justify-content-center" onclick="validarCampos()">Enviar pedido</button>
+                                    <button type="submit" class="form-button d-flex justify-content-center" onclick="validarCampos(),addPedido()">Enviar pedido</button>
                                 </div>
                             </form>
                         </div>
@@ -223,7 +226,7 @@
     <!--------------------------------------------------------Link de JavaScript de Bootstrap---------------------------------------------------------->
     <script src="javascriptBootstrap/bootstrap.min.js"></script>
     <script src="./js/validacionesFormulario.js"></script>
-    <script src="./js/ocultarMostrarElementos.js"></script>
+    <script src="./js/OcultarMostrarFormulario.js"></script>
     <script src="./js/pedidos.js"></script>
     <script src="https://kit.fontawesome.com/38961e7548.js" crossorigin="anonymous"></script>
 

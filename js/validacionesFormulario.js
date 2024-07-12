@@ -51,4 +51,6 @@ function validarCampos(){
         return 0;
     }
     
+    alert("Pedido recibido con exito");
+    window.location.reload();
 }
