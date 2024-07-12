@@ -58,39 +58,34 @@ function dibujarError(error) {
   document.querySelector('#pedidos').innerHTML = error;
 }
 
-formNuevoPedido = document.getElementById('formPedido');
-formNuevoPedido.addEventListener('submit',async (event) =>{
-  event.preventDefault();
-  const producto = document.getElementById('producto').value;
-  const especie = document.getElementById('plantas').value || document.getElementById('arboles').value || document.getElementById('flores').value || document.getElementById('cultivos').value;
-  const formaPago = document.getElementById('pago').value;
-  const direccion = document.getElementById('direccion').value;
-  const contacto = document.getElementById('contacto').value;
-
-  const options = {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      producto: producto,
-      especie: especie,
-      formapago: formaPago,
-      direccion: direccion,
-      contacto: contacto
-    })
-  };
-
-  const reponse = await fetch('http://localhost:8080/addPedido', options);
-  console.log(reponse);
-  const data = await reponse.json();
 
 
-  if (response.status === 201 && validarCampos()) {
-    alert('Pedido agregado correctamente');
-    // que se recargue la pagina para ver la pelicula agregada
-    location.reload();
-  } else {
-      alert('Error al agregar la pelicula');
-  }
-});
+function addPedido(){
+  formNuevoPedido = document.getElementById('formPedido');
+
+  formNuevoPedido.addEventListener('submit',async (event) =>{
+    event.preventDefault();
+    const producto = document.getElementById('producto').value;
+    const especie = document.getElementById('plantas').value || document.getElementById('arboles').value || document.getElementById('flores').value || document.getElementById('cultivos').value;
+    const formaPago = document.getElementById('pago').value;
+    const direccion = document.getElementById('direccion').value;
+    const contacto = document.getElementById('contacto').value;
+  
+    const options = {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        producto: producto,
+        especie: especie,
+        formapago: formaPago,
+        direccion: direccion,
+        contacto: contacto
+      })
+    };
+  
+    const reponse = await fetch('http://localhost:8080/addPedido', options);
+    
+  });
+}

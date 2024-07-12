@@ -38,10 +38,10 @@ public class PedidoDAO {
         try {
             Statement statement = ConexionDB.getStatement();
             Integer cantIngresar = statement.executeUpdate("Insert Into pedidos (producto, especie, formapago, direccion, contacto) Values ('"+pedido.getProducto()+
-                    "', "+pedido.getEspecie()+
-                    "', "+pedido.getFormapago()+
-                    "', "+pedido.getDireccion()+
-                    "', "+pedido.getContacto()+"')"
+                    "', '"+pedido.getEspecie()+
+                    "', '"+pedido.getFormapago()+
+                    "', '"+pedido.getDireccion()+
+                    "', '"+pedido.getContacto()+"')"
             );
             Boolean ingresoOk = (cantIngresar == 1);
             return ingresoOk;

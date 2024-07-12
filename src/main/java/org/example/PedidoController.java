@@ -23,10 +23,8 @@ public class PedidoController {
 
     @CrossOrigin(origins = "*")
     @PostMapping("/addPedido")
-    public void addPedido(@RequestBody String producto, String especie, String formapago, String direccion, String contacto) {
-        Pedido pedido = new Pedido(producto, especie, formapago, direccion, contacto);
+    public void addPedido(@RequestBody Pedido pedido) {
         PedidoDAO pedidoDAO = new PedidoDAO();
-        System.out.println(pedido);
         pedidoDAO.Push(pedido);
 
     }
