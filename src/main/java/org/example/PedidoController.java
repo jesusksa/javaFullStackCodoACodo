@@ -25,8 +25,8 @@ public class PedidoController {
     @PostMapping("/addPedido")
     public void addPedido(@RequestBody String producto, String especie, String formapago, String direccion, String contacto) {
         Pedido pedido = new Pedido(producto, especie, formapago, direccion, contacto);
-
         PedidoDAO pedidoDAO = new PedidoDAO();
+        System.out.println(pedido);
         pedidoDAO.Push(pedido);
 
     }
@@ -36,7 +36,6 @@ public class PedidoController {
     public void delPedido(@PathVariable("id") Integer id) {
         Pedido pedido = new Pedido();
         pedido.setIdpedidos(id);
-
         PedidoDAO pedidoDAO = new PedidoDAO();
         pedidoDAO.Pop(pedido);
 

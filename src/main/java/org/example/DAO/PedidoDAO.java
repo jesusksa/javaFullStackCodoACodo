@@ -54,7 +54,7 @@ public class PedidoDAO {
     public Boolean Pop(Pedido pedido){
         try {
             Statement statement = ConexionDB.getStatement();
-            Integer cantidadBorrar = statement.executeUpdate("Delete From pedidos Where idpedido="+pedido.getIdpedidos());
+            Integer cantidadBorrar = statement.executeUpdate("Delete From pedidos Where idpedidos="+pedido.getIdpedidos());
             Boolean borradoOk = (cantidadBorrar == 1);
             return borradoOk;
         }catch (Exception e){
